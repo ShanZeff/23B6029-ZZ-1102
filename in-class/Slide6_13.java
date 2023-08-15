@@ -1,5 +1,6 @@
 // class: MyClass
 // method: myMethod
+// should I put the main method at the bottom like usual?
 
 public class Slide6_13 {
   public static void main (String[] args) {
@@ -8,6 +9,8 @@ public class Slide6_13 {
     newLine();
     threeLine();
     System.out.println("Second Line.");
+    print();
+    print();
   }
   
   public static void newLine() {
@@ -16,5 +19,9 @@ public class Slide6_13 {
   
   public static void threeLine() {
     newLine(); newLine(); newLine();
+  }
+  
+  public static void print() {
+    System.out.println("Hello, I am in the print method.");
   }
 }
