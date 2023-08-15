@@ -12,8 +12,8 @@ public class Lab02_02 {
     int result = n++;
     System.out.println("n = " + n + ", result = " + result);
     
-    int n = 8;
-    int result = ++n;
+    n = 8;
+    result = ++n;
     System.out.println("n = " );
   }
 }
