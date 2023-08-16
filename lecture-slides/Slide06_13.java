@@ -2,8 +2,8 @@
 // method: myMethod
 // should I put the main method at the bottom like usual?
 
-public class Slide6_13 {
-  public static void main (String[] args) {
+public class Slide06_13 {
+  public static void main(String[] args) {
     System.out.println("First Line.");
     // calling a method
     newLine();

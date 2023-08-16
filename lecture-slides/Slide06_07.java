@@ -1,7 +1,5 @@
-import java.lang.Math;
-
-public class Slide6_07 {
-  public static void main (String [] args) {
+public class Slide06_07 {
+  public static void main(String[] args) {
     double a = 27.5;
     System.out.println(Math.sqrt(17.0));
     
@@ -17,7 +15,7 @@ public class Slide6_07 {
     double angle2 = degrees * 2 * Math.PI / 360.0;
     System.out.println("angle in radian: " + angle2);
     
-    int x1 = (int)Math.round(Math.PI * 20.0); // typecasting long to int 
+    int x1 = (int)Math.round(Math.PI * 20.0);  // typecasting long to int 
     System.out.println(x1);
     
     // composition

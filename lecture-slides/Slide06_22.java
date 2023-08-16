@@ -1,9 +1,12 @@
-public class Slide6_22 {
-  public static void main (String[] args) {
+public class Slide06_22 {
+  public static void main(String[] args) {
     printTwice("Don't make me say this twice!");
     
     String argument = "Never say never.";
+    String quote = "I ain't no easy better think about it twice!";
+    
     printTwice(argument);
+    printTwice(quote);
   }
   
   public static void printTwice(String s) {
