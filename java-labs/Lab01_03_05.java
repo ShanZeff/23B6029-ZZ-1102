@@ -1,5 +1,5 @@
 public class Lab01_03_05 {
-  public static void main (String[] args) {
+  public static void main(String[] args) {
     // 3.5 Declaring and Using variables
     int age;
     int numberOfStudents = 20;

@@ -1,5 +1,5 @@
 public class Lab01_03_10 {
-  public static void main (String[] args) {
+  public static void main(String[] args) {
     String myString = "UBD";
     int num1 = 12, num2 = 45;
     

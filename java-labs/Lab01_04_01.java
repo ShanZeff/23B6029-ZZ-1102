@@ -1,6 +1,6 @@
 // Syntax errors
 public class Lab01_04_01 {
-  public static void main (String[] args) {
+  public static void main(String[] args) {
     //System.out.println("This is a test line")
     
     int num1 = 15;
