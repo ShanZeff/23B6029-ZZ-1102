@@ -7,6 +7,7 @@ public class Slide06_22 {
     
     printTwice(argument);
     printTwice(quote);
+    // printTwice(17);    gives error
   }
   
   public static void printTwice(String s) {
