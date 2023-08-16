@@ -1,6 +1,6 @@
-public class Slide40 {
-  public static void main (String[] args) {
-    // Slide 40 | 41 | 42
+// Slide 40 | 41 | 42
+public class Slide04_40 {
+  public static void main(String[] args) {
     String bob = "bob";
     /*
     System.out.println(bob - 1);
@@ -9,7 +9,6 @@ public class Slide40 {
     */
     System.out.println("Hello, " + "world.");
     System.out.println(bob + "ism");
-    
     
     // Slide 41
     int hour = 11;
@@ -21,7 +20,7 @@ public class Slide40 {
     System.out.println(percentage);
     
     // Slide 42
-    //int x1 = 1.0;
+    // int x1 = 1.0;
     int x2 = (int)1.1;
     System.out.println(x2);
     
