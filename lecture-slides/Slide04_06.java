@@ -1,5 +1,5 @@
 public class Slide04_06 {
-  public static void main (String[] args) {
+  public static void main(String[] args) {
     int counter;
     int numStudents = 583;
     long longValue;

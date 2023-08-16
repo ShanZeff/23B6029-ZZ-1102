@@ -1,5 +1,5 @@
 public class Slide04_12 {
-  public static void main (String[] args) {
+  public static void main(String[] args) {
     String bob01, bob02, bob03;
     String firstName;
     String lastName;
@@ -12,9 +12,12 @@ public class Slide04_12 {
     bob02 = "123";  // legal
     // bob03 = 123;  // not legal
     
+    int hour1 = 20;
     System.out.println(bob01);
     System.out.println(bob02);
-    System.out.println(hour);
+    System.out.println("hour: " + hour);
+    System.out.println("hour1: " + hour1);
+    System.out.println(hour + hour1);
     System.out.println(minute);
   }
 }
