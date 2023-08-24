@@ -18,14 +18,16 @@ public class LuckyDraw{
     System.out.println("Total dice: " + totalDice);
     
     if (totalDice == 12) {
-      System.out.println("You win 1st place");
+      System.out.println("Congrats, You win 1st place!");
+      
     } else if (totalDice >= 6 && totalDice <= 11) {
-      System.out.println("You win 2nd place");
+      System.out.println("Congrats, You win 2nd place!");
+      
     } else if (totalDice >= 2 && totalDice <= 5) {
-      System.out.println("You win 3rd place");
+      System.out.println("Congrats, You win 3rd place!");
+      
     } else {
-      System.out.println("Invalid draws.");
+      System.out.println("Invalid draws. You get the consolation prize, try again.");
     }
-    
   }
 }
