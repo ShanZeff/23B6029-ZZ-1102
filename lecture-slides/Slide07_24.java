@@ -1,4 +1,6 @@
 // Standard Input
+// .next() only one token
+
 import java.util.Scanner;
 
 public class Slide07_24 {
@@ -9,8 +11,12 @@ public class Slide07_24 {
     // Scanner sc = new Scanner(System.in);
     
     System.out.print("Enter your first name: ");
-    String firstName = scanner.next();
+    // String firstName = scanner.next();
+    String firstName = scanner.nextLine();
     System.out.println("Nice to meet you, " + firstName + ".");
     
+    System.out.println("Enter your age: ");
+    int age = scanner.nextInt();
+    System.out.println("Nice to meet you, " + firstName + ", " + age);
   }
 }
