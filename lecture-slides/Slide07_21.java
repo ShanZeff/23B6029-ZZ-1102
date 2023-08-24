@@ -13,7 +13,7 @@ public class Slide07_21 {
     }
     
     
-    int x = 21;
+    int x = 68;
     if ((x%2) == 0) {
       System.out.println(x + " is even.");
     } else {
