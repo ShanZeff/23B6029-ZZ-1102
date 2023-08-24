@@ -1,5 +1,5 @@
 // W3 Conditional. 
-// Lab 2-2. Activity 3/4/6.
+// Lab 2-2 | 2-3. Activity 3/4/5/6.
 // Notes: make it flexible as possible
 
 public class Slide07_04 {
