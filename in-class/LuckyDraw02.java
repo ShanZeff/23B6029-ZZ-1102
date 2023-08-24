@@ -1,17 +1,14 @@
-// You are asked to develop a simple lucky draw system
-// Draw a dice one at a time
-// 1st Prize winner: total dice = 12
-// 2nd Prize winner: total dice = 6 - 11
-// 3rd Prize winner: total dice = 2-5
-// Consolation -- others 
+import java.util.Scanner;
 
-import java.util.concurrent.ThreadLocalRandom;
-
-public class LuckyDraw01 {
+public class LuckyDraw02{
   public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.print("Draw first dice: ");
     int dice1, dice2, totalDice;
-    dice1 = ThreadLocalRandom.current().nextInt(1, 6 + 1);
-    dice2 = ThreadLocalRandom.current().nextInt(1, 6 + 1);
+    dice1 = sc.nextInt();
+    System.out.print("Draw second dice: ");
+    dice2 = sc.nextInt();
     totalDice = dice1 + dice2;
     
     System.out.println("1st dice: " + dice1 + ",  2nd dice: " + dice2);
