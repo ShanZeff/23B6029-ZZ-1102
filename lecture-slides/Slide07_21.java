@@ -1,8 +1,13 @@
+import java.util.Scanner;
+
 public class Slide07_21 {
   public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
     double first, second;
-    first = 20.4;
-    second = -23.3;
+    System.out.print("Enter first numeric value: ");
+    first = scanner.nextDouble();
+    System.out.print("Enter second numeric value: ");
+    second = scanner.nextDouble();
     
     if (first > second) {
       double diff = first - second;
@@ -13,7 +18,9 @@ public class Slide07_21 {
     }
     
     
-    int x = 68;
+    int x;
+    System.out.print("Enter the numeric value: ");
+    x = scanner.nextInt();
     if ((x%2) == 0) {
       System.out.println(x + " is even.");
     } else {
