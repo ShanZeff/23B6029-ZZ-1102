@@ -21,10 +21,10 @@ public class Activity02 {
     
   }
   
-  public static void max(myX, myY) {
+  public static void max(double myX, double myY) {
   }
   
-  public static void min(myX, myY) {
+  public static void min(double myX, double myY) {
   }
   */
   public static void sum(double myX, double myY) {
