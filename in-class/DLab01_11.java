@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class DLab01_11 {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter up to what number that you want to sum up: ");
+    System.out.print("Please enter the upper limit for the summation: ");
     int n = scanner.nextInt();
     int result = sumUp(n);
     System.out.println("Sum: " + result);
