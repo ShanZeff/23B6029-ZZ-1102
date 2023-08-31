@@ -31,7 +31,7 @@ public class Lab02_02P10_T04 {
     
     area = length * width;
     perimeter = 2 * (length +  width);
-    System.out.printf("Area: %.2f square cm, Perimeter: %.2f cm.%n", area, perimeter);
+    System.out.printf("Area = %.2f square cm, Perimeter = %.2f cm.%n", area, perimeter);
   }
   
   public static void calcCircle() {
@@ -41,6 +41,6 @@ public class Lab02_02P10_T04 {
     
     area = Math.PI * radius * radius;
     circumference = 2 * Math.PI * radius;
-    System.out.printf("Area: %.2f square cm, Circumference: %.2f cm.%n", area, circumference);
+    System.out.printf("Area = %.2f square cm, Circumference = %.2f cm.%n", area, circumference);
   }
 }
