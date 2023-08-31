@@ -1,3 +1,4 @@
+// Lab 02-1 Part 08
 import java.util.Scanner;
 public class Lab02_01P08_T01 {
   public static final Scanner scanner = new Scanner(System.in);
@@ -9,6 +10,7 @@ public class Lab02_01P08_T01 {
     volume = calcVolume(radius);
     sfArea = calcSurfaceArea(radius);
     
+    // appropriate output format of two decimal places
     System.out.printf("Volume = %.2f Cubic cm.%n", volume);
     System.out.printf("Surface area = %.2f Square cm.%n", sfArea);
     scanner.close();

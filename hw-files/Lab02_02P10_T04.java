@@ -1,8 +1,10 @@
+// Lab 02-2 Part 10
 import java.util.Scanner;
 public class Lab02_02P10_T04 {
   public static final Scanner scanner = new Scanner(System.in);
   
   public static void main(String[] args) {
+    // user chooses menu
     System.out.println("1: Find area and perimeter of a rectangle");
     System.out.println("2: Find area and circumference of a circle");
     System.out.print("Enter your menu choice: ");
@@ -11,6 +13,7 @@ public class Lab02_02P10_T04 {
     scanner.close();
   }
   
+  // menu selection
   public static void menuChoice(int myOption) {
     switch (myOption) {
       case 1: calcRectangle();

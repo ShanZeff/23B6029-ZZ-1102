@@ -1,3 +1,4 @@
+// Lab 02-2 Part 10
 import java.util.Scanner;
 public class Lab02_02P10_T10 {
   public static final Scanner scanner = new Scanner(System.in);
