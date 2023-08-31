@@ -6,11 +6,12 @@ public class Lab02_02P10_T10 {
     double celsius, fahrenheit;
     System.out.print("Enter the temperature in fahrenheit: ");
     fahrenheit = scanner.nextDouble();
-    celsius = calcCelsius(fahrenheit); 
-    System.out.println("The temperature " + fahrenheit + " F is converted into " + celsius + " Celsius.");
+    celsius = convertToCelsius(fahrenheit);
+    System.out.printf("The temperature %.1f F is converted into %.1f Celsius.%n", fahrenheit, celsius);
+    scanner.close();
   }
   
-  public static double calcCelsius(double myFahrenheit) {
+  public static double convertToCelsius(double myFahrenheit) {
     double result = (5.0 / 9.0) * (myFahrenheit - 32);
     return result;
   }

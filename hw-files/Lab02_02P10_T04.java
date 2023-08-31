@@ -31,8 +31,7 @@ public class Lab02_02P10_T04 {
     
     area = length * width;
     perimeter = 2 * (length +  width);
-    System.out.print("Area: " + formatDecimal(area) + " square cm, ");
-    System.out.println("Perimeter: " + formatDecimal(perimeter) + " cm.");
+    System.out.printf("Area: %.2f square cm, Perimeter: %.2f cm.%n", area, perimeter);
   }
   
   public static void calcCircle() {
@@ -42,11 +41,6 @@ public class Lab02_02P10_T04 {
     
     area = Math.PI * radius * radius;
     circumference = 2 * Math.PI * radius;
-    System.out.print("Area: " + formatDecimal(area) + " square cm, ");
-    System.out.println("Circumference: " + formatDecimal(circumference) + " cm.");
-  }
-  
-  public static String formatDecimal(double value) {
-    return String.format("%.2f", value);
+    System.out.printf("Area: %.2f square cm, Circumference: %.2f cm.%n", area, circumference);
   }
 }

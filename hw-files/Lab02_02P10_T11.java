@@ -1,14 +1,23 @@
-//import java.util.Scanner;
+import java.util.Scanner;
 public class Lab02_02P10_T11 {
+  public static final Scanner scanner = new Scanner(System.in);
+  
   public static void main(String[] args) {
     double distance, speed, timeHour, timeMinute, timeTotal;
-    speed = 83.33;
-    timeHour = 1.0;
-    timeMinute = 12.0;
+    System.out.print("Enter the speed: ");
+    speed = scanner.nextDouble();
+    
+    System.out.print("Enter the total hours traveled: ");
+    timeHour = scanner.nextDouble();
+    
+    System.out.print("Enter the remaining minutes: ");
+    timeMinute = scanner.nextDouble();
+    
     timeTotal = calcTime(timeHour, timeMinute);
-
     distance = calcDistance(speed, timeTotal);
-    System.out.println(formatDecimal(distance));
+    
+    System.out.printf("The total distance traveled is %.1f km.%n", distance);
+    scanner.close();
   }
   
   public static double calcTime(double myHour, double myMinute) {
@@ -19,9 +28,5 @@ public class Lab02_02P10_T11 {
   public static double calcDistance(double mySpeed, double myTime) {
     double result = mySpeed * myTime;
     return result;
-  }
-  
-  public static String formatDecimal(double value) {
-    return String.format("%.2f", value);
   }
 }
