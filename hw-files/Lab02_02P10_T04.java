@@ -22,16 +22,22 @@ public class Lab02_02P10_T04 {
   
   public static void calcRectangle() {
     double length, width, area, perimeter;
+    length = inputRectangle.length();
+    width = inputRectangle.width();
+    area = length * width;
+    perimeter = (2*length) + (2*width);
+    System.out.println("area: " + String.format("%.2f", area));
+    System.out.println("perimeter: " + String.format("%.2f", perimeter));
+  }
+  
+  public static double inputRectangle() {
+    double length, width, area, perimeter;
     Scanner scanner = new Scanner(System.in);
     System.out.print("Enter the length: ");
     length = scanner.nextDouble();
     System.out.print("Enter the width: ");
     width = scanner.nextDouble();
-    
-    area = length * width;
-    perimeter = (2*length) + (2*width);
-    System.out.println("area: " + String.format("%.2f", area));
-    System.out.println("perimeter: " + String.format("%.2f", perimeter));
+    return length; width;
   }
   
   public static void calcCircle() {
@@ -45,4 +51,3 @@ public class Lab02_02P10_T04 {
     System.out.println("circumference: " + String.format("%.2f", circumference));
   }
 }
-

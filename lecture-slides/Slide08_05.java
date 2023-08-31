@@ -1,4 +1,3 @@
-//import java.util.Scanner;
 public class Slide08_05 {
   public static void main(String[] args) {
     // first way
