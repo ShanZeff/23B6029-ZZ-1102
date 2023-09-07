@@ -10,7 +10,7 @@ public class Slide09_12 {
     int counter =1; int sum = 0;
     
     while (counter <= userNum) {
-      sum = sum + counter;
+      sum += counter;
       ++counter;   
     }
     
