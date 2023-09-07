@@ -13,11 +13,26 @@ public class ALab02 {
     System.out.println(vol_pb + " " + vol_b);
   }
   
-  public static void shoot(double vol_pb, double vol_b) {
-    
+  public static void shoot(double vol_pb, double vol_b, double distThrow) {
+    boolean result;
+    if (vol_pb < vol_b) {
+      if (distThrow > 90 & distThrow < 110) {
+        result = true;
+      } else {
+        result = false;
+      }
+    } else {
+      result = false;
+    }   
+    System.out.println(result);
   }
   
   public static void printResult(boolean result) {
+    if (result = true) {
+      System.out.println("Hoooray!! The paper ball went into the basket.");
+    } else {
+      System.out.println("Booo, the paper ball didn't went in. Try again.");
+    }
   }
 }
 // 1, 3, 5, 7, 9, 11, 13
