@@ -1,7 +1,11 @@
+// just have to check that both dice are valid
+// dice with six sides
+
 import java.util.Scanner;
 public class LuckyDraw02 {
   public static void main(String[] args) {
-    luckyDraw();
+    boolean myResult = false;
+    runLuckyDraw(myResult);
   }
   
   public static boolean luckyDraw() {
@@ -33,14 +37,13 @@ public class LuckyDraw02 {
     } else {
       System.out.println("Invalid draws. You get the consolation prize, try again.");
       result = false;
-      runLuckyDraw(result);
     }
     return result;
   }
   
   public static void runLuckyDraw(boolean result) {
-    while (result = false) {
-      luckyDraw();
+    while (!result) {
+      result = luckyDraw();
     }
   }
 }
