@@ -1,5 +1,4 @@
-// just have to check that both dice are valid
-// dice with six sides
+// maybe dice validity its own method?
 
 import java.util.Scanner;
 public class LuckyDraw02 {
@@ -9,51 +8,44 @@ public class LuckyDraw02 {
   
   public static void inputDice() {
     Scanner sc = new Scanner(System.in);
-    
-    System.out.print("Draw first dice: ");
     int dice1, dice2, totalDice;
+    System.out.print("Draw first dice: ");
     dice1 = sc.nextInt();
     System.out.print("Draw second dice: ");
     dice2 = sc.nextInt();
-    totalDice = dice1 + dice2;
     
-    System.out.println("1st dice: " + dice1 + ",  2nd dice: " + dice2);
-    System.out.println("Total dice: " + totalDice);
-    
-    if (dice1 >= 1 && dice1 <= 6) {
-      if (dice2 >= 1 && dice2 <= 6) {
+    boolean result = false;
+    while (!result) {
+      if (dice1 >= 1 && dice1 <= 6) {
+        if (dice2 >= 1 && dice2 <= 6) {
+        totalDice = dice1 + dice2;
+        System.out.println("1st dice: " + dice1 + ",  2nd dice: " + dice2);
+        System.out.println("Total dice: " + totalDice);
         luckyDraw(totalDice);
+        result = true;
       }
     } else {
-      System.out.println("Enter the dices again.");
-      inputDice();
+      System.out.println("Invalid dice values. Enter the dice values again.");
+      inputDice(); 
+    }
     }
   }
   
-  public static boolean luckyDraw(int totalDice) {
-    boolean result;
+  public static void luckyDraw(int totalDice) {
     if (totalDice == 12) {
       System.out.println("Congrats, You win 1st place!");
-      result = true;
       
     } else if (totalDice >= 6 && totalDice <= 11) {
       System.out.println("Congrats, You win 2nd place!");
-      result = true;
       
     } else if (totalDice >= 2 && totalDice <= 5) {
       System.out.println("Congrats, You win 3rd place!");
-      result = true;
       
     } else {
       System.out.println("Invalid draws. You get the consolation prize, try again.");
-      result = false;
-    }
-    return result;
-  }
-  
-  public static void runLuckyDraw(boolean result) {
-    while (!result) {
-      result = luckyDraw();
+      inputDice();
     }
   }
 }
+
+
