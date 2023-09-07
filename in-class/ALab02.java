@@ -16,7 +16,7 @@ public class ALab02 {
   public static void shoot(double vol_pb, double vol_b, double distThrow) {
     boolean result;
     if (vol_pb < vol_b) {
-      if (distThrow > 90 & distThrow < 110) {
+      if (distThrow > 90 && distThrow < 110) {
         result = true;
       } else {
         result = false;

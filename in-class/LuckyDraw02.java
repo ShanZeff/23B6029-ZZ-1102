@@ -4,11 +4,10 @@
 import java.util.Scanner;
 public class LuckyDraw02 {
   public static void main(String[] args) {
-    boolean myResult = false;
-    runLuckyDraw(myResult);
+    inputDice();
   }
   
-  public static boolean luckyDraw() {
+  public static void inputDice() {
     Scanner sc = new Scanner(System.in);
     
     System.out.print("Draw first dice: ");
@@ -21,6 +20,17 @@ public class LuckyDraw02 {
     System.out.println("1st dice: " + dice1 + ",  2nd dice: " + dice2);
     System.out.println("Total dice: " + totalDice);
     
+    if (dice1 >= 1 && dice1 <= 6) {
+      if (dice2 >= 1 && dice2 <= 6) {
+        luckyDraw(totalDice);
+      }
+    } else {
+      System.out.println("Enter the dices again.");
+      inputDice();
+    }
+  }
+  
+  public static boolean luckyDraw(int totalDice) {
     boolean result;
     if (totalDice == 12) {
       System.out.println("Congrats, You win 1st place!");
