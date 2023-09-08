@@ -1,3 +1,4 @@
+// not fixed, logic error
 import java.util.Scanner;
 public class LuckyDraw02 {
   public static void main(String[] args) {
@@ -18,21 +19,18 @@ public class LuckyDraw02 {
     int totalDice;
     boolean result = false;
     while (!result) {
-      if (dice1 >= 1 && dice1 <= 6) {
-        if (dice2 >= 1 && dice2 <= 6) {
-          totalDice = dice1 + dice2;
+      if (dice1 >= 1 && dice1 <= 6 && dice2 >= 1 && dice2 <= 6) {
+        totalDice = dice1 + dice2;
           System.out.println("1st dice: " + dice1 + ",  2nd dice: " + dice2);
           System.out.println("Total dice: " + totalDice);
-          luckyDraw(totalDice);
           result = true;
+          luckyDraw(totalDice);
+      } else {
+        System.out.println("Invalid dice values. Enter the dice values again.");
+        inputDice();
       }
-    } else {
-      System.out.println("Invalid dice values. Enter the dice values again.");
-      inputDice(); 
-    }
     }
   }
-  
   
   public static void luckyDraw(int totalDice) {
     if (totalDice == 12) {
@@ -50,5 +48,3 @@ public class LuckyDraw02 {
     }
   }
 }
-
-
