@@ -1,5 +1,3 @@
-// maybe dice validity its own method?
-
 import java.util.Scanner;
 public class LuckyDraw02 {
   public static void main(String[] args) {
@@ -8,21 +6,25 @@ public class LuckyDraw02 {
   
   public static void inputDice() {
     Scanner sc = new Scanner(System.in);
-    int dice1, dice2, totalDice;
+    int dice1, dice2;
     System.out.print("Draw first dice: ");
     dice1 = sc.nextInt();
     System.out.print("Draw second dice: ");
     dice2 = sc.nextInt();
-    
+    diceValidity(dice1, dice2);
+  }
+  
+  public static void diceValidity(int dice1, int dice2) {
+    int totalDice;
     boolean result = false;
     while (!result) {
       if (dice1 >= 1 && dice1 <= 6) {
         if (dice2 >= 1 && dice2 <= 6) {
-        totalDice = dice1 + dice2;
-        System.out.println("1st dice: " + dice1 + ",  2nd dice: " + dice2);
-        System.out.println("Total dice: " + totalDice);
-        luckyDraw(totalDice);
-        result = true;
+          totalDice = dice1 + dice2;
+          System.out.println("1st dice: " + dice1 + ",  2nd dice: " + dice2);
+          System.out.println("Total dice: " + totalDice);
+          luckyDraw(totalDice);
+          result = true;
       }
     } else {
       System.out.println("Invalid dice values. Enter the dice values again.");
@@ -30,6 +32,7 @@ public class LuckyDraw02 {
     }
     }
   }
+  
   
   public static void luckyDraw(int totalDice) {
     if (totalDice == 12) {
