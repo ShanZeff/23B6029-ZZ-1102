@@ -1,3 +1,8 @@
+// method main
+// method inputDice
+// method diceValidity
+// method luckyDraw
+
 import java.util.Scanner;
 public class LuckyDraw03 {
   public static final Scanner sc = new Scanner(System.in);
@@ -11,9 +16,9 @@ public class LuckyDraw03 {
     boolean validInput = false;
     
     while (!validInput) {
-      System.out.print("Draw first dice: ");
+      System.out.print("Draw first dice [1 - 6]: ");
       dice1 = sc.nextInt();
-      System.out.print("Draw second dice: ");
+      System.out.print("Draw second dice [1 - 6]: ");
       dice2 = sc.nextInt();
       validInput = diceValidity(dice1, dice2);
     }
@@ -41,7 +46,7 @@ public class LuckyDraw03 {
       System.out.println("Congrats, You win 3rd place!");
     } else {
       System.out.println("Invalid draws. You get the consolation prize, try again.");
-            inputDice();
+      inputDice();
     }
   }
 }
