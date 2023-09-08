@@ -1,12 +1,12 @@
 import java.util.Scanner;
-
 public class LuckyDraw03 {
-    public static void main(String[] args) {
+  public static final Scanner sc = new Scanner(System.in);
+  public static void main(String[] args) {
         inputDice();
+        sc.close();
     }
 
     public static void inputDice() {
-        Scanner sc = new Scanner(System.in);
         int dice1, dice2;
         boolean validInput = false;
 
@@ -17,8 +17,6 @@ public class LuckyDraw03 {
             dice2 = sc.nextInt();
             validInput = diceValidity(dice1, dice2);
         }
-
-        sc.close();
     }
 
     public static boolean diceValidity(int dice1, int dice2) {
