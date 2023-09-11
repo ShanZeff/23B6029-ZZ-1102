@@ -1,8 +1,3 @@
-// method main
-// method inputDice
-// method diceValidity
-// method luckyDraw
-
 import java.util.Scanner;
 public class LuckyDraw03 {
   public static final Scanner sc = new Scanner(System.in);
@@ -50,3 +45,20 @@ public class LuckyDraw03 {
     }
   }
 }
+
+// method main
+// - calls inputDice
+// - closes scanner to prevent error
+
+// method inputDice
+// - ask for input of the 2 dices drawn by the user
+// - calls diceValidity
+// - continues to ask for dice input until valid dice values are given
+
+// method diceValidity
+// - check for dice validity, accepted dice values only from 1 - 6
+// - calculates the total dice
+// - calls luckyDraw
+
+// method luckyDraw
+// - outputs congrats message based on the result of totalDice
