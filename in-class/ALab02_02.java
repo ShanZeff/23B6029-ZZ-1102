@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ALab02 {
+public class ALab02_02 {
   public static final Scanner sc = new Scanner(System.in);
   public static void main(String[] args) {
     startThrow();
@@ -8,12 +8,11 @@ public class ALab02 {
   
   public static void startThrow() {
     double pb_r; double b_r; double b_h; double distance;
+    b_r = 10.0;
+    b_h = 10.0;
+    
     System.out.print("Enter the paper ball radius: ");
     pb_r = sc.nextDouble();
-    System.out.print("Enter the basket radius: ");
-    b_r = sc.nextDouble();
-    System.out.print("Enter the basket height: ");
-    b_h = sc.nextDouble();
     System.out.print("Enter the distance thrown: ");
     distance = sc.nextDouble();
     
@@ -32,7 +31,7 @@ public class ALab02 {
   public static void shoot(double vol_pb, double vol_b, double distThrow) {
     boolean result;
     if (vol_pb < vol_b) {
-      if (distThrow > 90 && distThrow < 110) {
+      if (distThrow == 100) {
         result = true;
       } else {
         result = false;
