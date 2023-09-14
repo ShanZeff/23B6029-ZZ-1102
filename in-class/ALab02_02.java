@@ -50,30 +50,3 @@ public class ALab02_02 {
     }
   }
 }
-
-// 1) startThrow
-// double pb_r : radius paper ball      : 2 cm
-// double b_r    : radius basket           : 10 cm
-// double b_h   : height basket           : 10 cm
-// double distance : distance throw    : 100 cm
-
-// 2) calculateThrow
-// double pb_r : radius paper ball
-// double b_r    : radius basket
-// double b_h   : height basket
-// double distance : distance throw
-// ** calc volume paper ball & basket
-// vol paper ball: v = (4/3) * Math.PI * (pb_r * pb_r)
-// vol basket: v = Math.PI * (b_r * b_r) * b_h 
-
-// 3) shoot
-// double vol_pb : volume paper ball
-// double vol_b   : volume basket
-// double distance : distance throw
-// ** check if paper ball into basket : yes/no?
-// ** volume paper ball < volume basket
-// ** within correct distance
-
-// 4) printResult
-// boolean result
-// goal message : It went in! / Bwoomp :(
