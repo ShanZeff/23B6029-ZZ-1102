@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ALab02_02 {
+public class Lab02_Assignment {
   public static final Scanner sc = new Scanner(System.in);
   public static void main(String[] args) {
     startThrow();    // game starts
