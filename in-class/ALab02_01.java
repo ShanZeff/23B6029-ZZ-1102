@@ -1,41 +1,56 @@
-public class ALab02 {
+import java.util.Scanner;
+public class ALab02_01 {
+  public static final Scanner sc = new Scanner(System.in);
   public static void main(String[] args) {
+    startThrow();
+    sc.close();
   }
   
-  public static void startThrow(double pb_r, double b_r, double b_h, double distance) {
+  public static void startThrow() {
+    double pb_r; double b_r; double b_h; double distance;
+    System.out.print("Enter the paper ball radius: ");
+    pb_r = sc.nextDouble();
+    System.out.print("Enter the basket radius: ");
+    b_r = sc.nextDouble();
+    System.out.print("Enter the basket height: ");
+    b_h = sc.nextDouble();
+    System.out.print("Enter the distance thrown: ");
+    distance = sc.nextDouble();
     
+    calculateThrow(pb_r, b_r, b_h, distance);
   }
   
   public static void calculateThrow(double pb_r, double b_r, double b_h, double distance) {
     double vol_pb, vol_b;
+    double distThrow = distance;
     vol_pb = (4.0/3.0) * Math.PI * (pb_r * pb_r);
     vol_b = Math.PI * (b_r * b_r) * b_h;
-    System.out.println(vol_pb + " " + vol_b);
+    System.out.printf("Paper ball volume = %.2f, Basket volume = %.2f%n", vol_pb, vol_b);
+    shoot(vol_pb, vol_b, distThrow);
   }
   
   public static void shoot(double vol_pb, double vol_b, double distThrow) {
     boolean result;
     if (vol_pb < vol_b) {
-      if (distThrow > 90 & distThrow < 110) {
+      if (distThrow > 90 && distThrow < 110) {
         result = true;
       } else {
         result = false;
       }
     } else {
       result = false;
-    }   
-    System.out.println(result);
+    }
+    printResult(result);
   }
   
   public static void printResult(boolean result) {
-    if (result = true) {
+    if (result == true) {
       System.out.println("Hoooray!! The paper ball went into the basket.");
     } else {
       System.out.println("Booo, the paper ball didn't went in. Try again.");
     }
   }
 }
-// 1, 3, 5, 7, 9, 11, 13
 
 // 1) startThrow
 // double pb_r : radius paper ball      : 2 cm
