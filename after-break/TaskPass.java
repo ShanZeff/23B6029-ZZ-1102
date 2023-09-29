@@ -2,12 +2,12 @@
 // if the password has the three characters of 'a'
 // then it is the correct password
 
+import java.util.Scanner;
 public class TaskPass {
   public static void main(String[] args) {
-    String password = "ayam";
-    passCheck(password);
-    
-    password = "extravagant";
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter your password: ");
+    String password = sc.nextLine();
     passCheck(password);
   }
   
