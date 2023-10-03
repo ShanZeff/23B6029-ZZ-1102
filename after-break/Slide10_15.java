@@ -49,4 +49,3 @@ public class Slide10_15 {
     System.out.println("new string = " + letterFirst + letterMiddle + letterLast);
   }
 }
-  
