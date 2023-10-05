@@ -3,7 +3,7 @@ import java.util.Scanner;
 // import this class which provides methods for generating random numbers
 import java.util.concurrent.ThreadLocalRandom;
 
-public class LuckyDraw04 {
+public class Lab03_Assignment {
   // declare the scanner and it is accessible across multiple classes/methods
   public static final Scanner sc = new Scanner(System.in);
   public static void main(String[] args) {
@@ -95,7 +95,7 @@ public class LuckyDraw04 {
     switch (userChoice) {
       case -1: System.out.println("Thanks for playing.");
                    // the system thanks the player and the game ends
-                    sc.close();
+                    sc.close();    // closes scanner when game ends
                     break;
       case 0: playGame();
                    // a new round starts if the user wants to play again
@@ -107,20 +107,3 @@ public class LuckyDraw04 {
     }
   }
 }
-
-// draw the two dice
-// random number generator
-// generator within range 1-6 already
-// no need check for dice validity
-
-// calculate the addition
-
-// check the result (addition)
-// 12, 6-11, 2-5, other
-
-// 12:    1st Place prize: Sony PlayStation 5 Console
-// 6-11: 2nd Place prize: iPhone 14
-// 2-5:   3rd Place prize: BND100 Hua Ho shopping voucher
-
-// Congrats, you win the [prize]!!
-// Repeat the draw for the next round. The system terminates once the player hits -1
