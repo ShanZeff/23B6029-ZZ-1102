@@ -1,10 +1,19 @@
+import java.util.Scanner;
 public class Slide10_06 {
+  public static final Scanner sc = new Scanner(System.in);
   public static void main(String[] args) {
-    String fruit = "strawberry";
+    String fruit = getString();
     
     countChar(fruit);
     findLastChar(fruit);
     traverseStringBasic(fruit);
+    sc.close();
+  }
+  
+  public static String getString() {
+    System.out.print("Enter your word: ");
+    String word = sc.nextLine();
+    return word;
   }
   
   public static void countChar(String fruit) {
