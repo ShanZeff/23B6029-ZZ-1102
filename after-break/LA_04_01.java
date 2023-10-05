@@ -6,7 +6,7 @@ public class LA_04_01 {
     String name = getString();
     int n = getNumber();
     repeatChar(name, n);
-    sc.close();
+    
   }
   
   public static String getString() {
