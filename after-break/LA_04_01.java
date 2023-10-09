@@ -1,12 +1,11 @@
 import java.util.Scanner;
 public class LA_04_01 {
-  // challenge 03
+  // challenge 02
   public static final Scanner sc = new Scanner(System.in);
   public static void main(String[] args) {
     String name = getString();
-    int n = getNumber();
-    repeatChar(name, n);
-    
+    checkChar(name);
+    sc.close();
   }
   
   public static String getString() {
@@ -15,22 +14,22 @@ public class LA_04_01 {
     return word;
   }
   
-  public static int getNumber() {
-    System.out.print("Enter how many times to repeat: ");
-    int num = sc.nextInt();
-    return num;
-  }
-  
-  public static void repeatChar(String name, int n) {
-    int var_counter_1 = 0;
-    while (var_counter_1 < name.length()) {
-      char letter = name.charAt(var_counter_1);
-      int var_counter_2 = 0;
-      while (var_counter_2 < n) {
-        System.out.print(letter);
-        var_counter_2 = var_counter_2 + 1;
-      }
-      var_counter_1 = var_counter_1 + 1;
+  public static void checkChar(String name) {
+    int length = name.length();
+    int last = (length - 1);
+    
+    char letterFirst = name.charAt(0);;
+    char letterLast = name.charAt(last);
+    
+    String str1 = String.valueOf(letterFirst);
+    String str2 = String.valueOf(letterLast);
+    System.out.println(str1 + "  " + str2);
+    
+    if (str1.equalsIgnoreCase(str2)) {
+      System.out.println("The first and the last characters are the same.");
+    } else {
+      System.out.println("The first and the last characters are not the same.");
     }
   }
-}  
+}
+  
