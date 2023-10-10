@@ -6,7 +6,6 @@ public class LA_04_02 {
     String s = getString();
     int n = getNumber();
     tape(s, n);
-    
   }
   
   public static String getString() {

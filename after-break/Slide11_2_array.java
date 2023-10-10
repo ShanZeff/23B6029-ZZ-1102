@@ -29,7 +29,7 @@ public class Slide11_2_array{
        System.out.println(studentW[i]);
     }
     
-    //last elemnt in the array in one line
+    //last element in the array in one line
      System.out.println("last: " +studentW[studentW.length-1]);
      System.out.println("first: " +studentW[0]);
 
