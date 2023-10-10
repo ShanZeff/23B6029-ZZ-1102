@@ -17,12 +17,9 @@ public class LA_04_01 {
   public static void checkChar(String name) {
     int length = name.length();
     int last = (length - 1);
-    
-    char letterFirst = name.charAt(0);;
-    char letterLast = name.charAt(last);
-    
-    String str1 = String.valueOf(letterFirst);
-    String str2 = String.valueOf(letterLast);
+
+    String str1 = name.substring(0,1);
+    String str2 = name.substring(last);
     System.out.println(str1 + "  " + str2);
     
     if (str1.equalsIgnoreCase(str2)) {
