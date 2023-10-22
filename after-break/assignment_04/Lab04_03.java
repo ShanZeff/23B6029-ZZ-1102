@@ -1,6 +1,6 @@
 // challenge 03
 import java.util.Scanner;
-public class L04_03 {
+public class Lab04_03 {
   public static final Scanner sc = new Scanner(System.in);
   public static void main(String[] args) {
     String s = getString();     // calls getString method and stores user input
@@ -33,7 +33,7 @@ public class L04_03 {
     
     // loop continues as long as it has not reached the word's length
     while (counter01 < s.length()) {
-      // each letter/character are retrieved by going through each index of the string
+      // each letter/character is retrieved by going through each index of the string
       char letter = s.charAt(counter01);
       int counter02 = 0;
       
@@ -47,8 +47,7 @@ public class L04_03 {
       counter01++;     // increment counter01
     }
     
-    // the array is converted into a string 
-    // and returns this new string to the main method
+    // converts the character array to a String and returns it to the main method
     return new String(resultArray);
   }
 }

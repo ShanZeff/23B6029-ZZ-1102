@@ -1,6 +1,6 @@
 // challenge 02
 import java.util.Scanner;
-public class L04_02 {
+public class Lab04_02 {
   public static final Scanner sc = new Scanner(System.in);
   public static void main(String[] args) {
     String str = getString();     // calls getString method and stores user input
