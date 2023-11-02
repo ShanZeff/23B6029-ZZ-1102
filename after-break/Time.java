@@ -1,7 +1,7 @@
 public class Time {
   // instance variables
-  int hour, minute;
-  double second;
+  private int hour, minute;
+  private double second;
   
   // constructor - is use to initialise the instance variable
   // must not have void
@@ -16,6 +16,14 @@ public class Time {
     hour = h;
     minute = m;
     second = s;
+  }
+  
+  public Time(double sec) {
+    this.hour = (int)(sec / 3600.0);
+    sec -= this.hour * 3600.0;
+    this.minute = (int)(sec / 60.0);
+    sec -= this.minute * 60;
+    this.second = sec;
   }
   
   // methods
