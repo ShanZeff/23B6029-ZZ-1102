@@ -8,10 +8,10 @@ public class Array_Slide15 {
     double value = kb.nextDouble();
     
     while (value >=0 && gradeCount < 100) {
-    grade[gradeCount] = value;
-    gradeCount++;
-    System.out.println("EnterNextGrade (negative number to to terminate) : ");
-    value = kb.nextDouble();
+      grade[gradeCount] = value;
+      gradeCount++;
+      System.out.println("EnterNextGrade (negative number to to terminate) : ");
+      value = kb.nextDouble();
     }
     
     //double average = getAverage(grade, gradeCount);
