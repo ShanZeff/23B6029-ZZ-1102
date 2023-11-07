@@ -14,7 +14,7 @@ public class SlideOOP_01 {
     Time t3 = new Time(2, 54, 2.2);
     printTime(t3);
     
-    Time t4 = new Time(8, 7, 4.5);
+    Time t4 = new Time();
     System.out.println(t4.getHour() + ":" + t4.getMinute() + ":" + t4.getSecond());
     
     boolean result = isAfter(t3, t4);

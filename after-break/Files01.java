@@ -1,12 +1,23 @@
 public class Files01 {
   public static void main(String[] args) {
-    int[] grades = {5, 7, 6, 8, 10};
+    int[] grades = {1, 2, 3, 4, 5, 6};
     double[][] scores = new double[3][4];
     double[][] sales = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
     
-    print(grades);
+    //printy(grades);
+    //System.out.println(grades[0]);
+    //print(grades);
     printArray(grades);
-    printA2(sales);
+    //printA2(sales);
+    
+    for (int i = 0; i < grades.length; i +=2) {
+      grades[i]=grades[i]*2;
+    }
+    printArray(grades);
+  }
+  
+  public static void printy(int[] r) {
+    r[0] = r[0]+1;
   }
   
   public static void print(int[] a) {
