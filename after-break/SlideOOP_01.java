@@ -20,8 +20,11 @@ public class SlideOOP_01 {
     boolean result = isAfter(t3, t4);
     System.out.println(result);
     
-    Time sum = addTime(t2, t3);
+    Time sum = addTime01(t2, t3);
     sum.print();
+    sum = addTime02(t2, t3);
+    sum.print();
+    increment(t1, 53.2);
   }
   
   public static void printTime(Time t) {
@@ -37,7 +40,7 @@ public class SlideOOP_01 {
     return false;
   }
   
-  public static Time addTime(Time t1, Time t2) {
+  public static Time addTime01(Time t1, Time t2) {
     Time sum = new Time();
     sum.setHour(t1.getHour() + t2.getHour());
     sum.setMinute(t1.getMinute() + t2.getMinute());
@@ -57,23 +60,29 @@ public class SlideOOP_01 {
     return sum;
   }
   
-  /*
+  public static Time addTime02(Time t1, Time t2) {
+    double secs = convertToSeconds(t1) + convertToSeconds(t2);
+    return new Time(secs);
+  }
+  
   public static void increment(Time time, double sec) {
-    time.getSecond() += sec;
+    double tempS = time.getSecond();
+    int tempM = time.getMinute();
+    int tempHr = time.getHour();
+    time.setSecond(tempS += sec);
     
-    while (time.getSecond() >= 60.0) {
-      time.getSecond() -= 60.0;
-      time.getMinute() += 1;
+    while (tempS >= 60.0) {
+      tempS -= 60.0;
+      tempM += 1;
     }
     
-    while (time.getMinute() >= 60) {
-      time.getMinute() -= 60;
-      time.getHour() += 1;
+    while (tempM >= 60) {
+      tempM -= 60;
+      tempHr += 1;
     }
   }
-  */
   
-   public static double convertToseconds(Time t) {
+   public static double convertToSeconds(Time t) {
     int minutes = t.getHour() * 60 + t.getMinute();
     double secs = minutes * 60 + t.getSecond();
     return secs;
